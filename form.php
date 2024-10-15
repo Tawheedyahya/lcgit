@@ -7,7 +7,7 @@
     <script src="script.js" defer></script>
 </head>
 <body>
-<form action="form.php" method="POST">
+<form action="formecho.php" method="POST">
     <!--NAME-->
     <p><label for="name">name</label><input type="text" name="name" id="name"></p>
     <!--DOB-->
@@ -48,13 +48,14 @@
     </select></p>
     
     <!--GENDER-->
-    <p><label for="gender">gender</label><input type="radio" name="gender" id="gender" value="male">male <input type="radio" name="gender" id="gender" value="female">female</p>
+    <p><label for="gender">gender</label><input type="radio" name="gender" id="gender" value="male" checked>male <input type="radio" name="gender" id="gender" value="female">female <input type="radio" name="gender" id="" value="check" checked>must check</p>
+
     <!--MAIL-->
     <p><label for="email">email</label><input type="email" name="email" id="email"></p>
     <!--LANGUAGE-->
     <p><label for="lang">language known</label><input type="checkbox" name="lang[]" id="lang" value="html">html <input type="checkbox" name="lang[]" id="lang" value="css">css</p>
-    <!--HOBBIES-->
-    <p><label for="hobbies">hobbies</label><select name="hobbies" id="hobbies">
+    <!--HOBBIES use multiple option-->
+    <p><label for="hobbies">hobbies</label><select name="hobbies[]" id="hobbies" multiple>
         <option value="">select</option>
         <option value="cricket">cricket</option>
         <option value="kabbadi">kabbadi</option>
