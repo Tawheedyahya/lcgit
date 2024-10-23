@@ -1,7 +1,7 @@
 <?php
 function validate($array){
 $errors=[];
-if($array['gender']!="check"){
+
     foreach($array as $key =>$value){
         if(!is_array($value)){
             if(empty(trim($value))){
@@ -15,11 +15,7 @@ if($array['gender']!="check"){
         if(empty($array['lang'])){
             $errors['lang']="lang should not be empty";
         }
-}
-else{
-    $errors['kk']= "set the gender";
-    
-}
+
 
 
 
