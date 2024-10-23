@@ -48,7 +48,7 @@
     </select></p>
     
     <!--GENDER-->
-    <p><label for="gender">gender</label><input type="radio" name="gender" id="gender" value="male" checked>male <input type="radio" name="gender" id="gender" value="female">female <input type="radio" name="gender" id="" value="check" checked>must check</p>
+    <p><label for="gender">gender</label><input type="radio" name="gender[]" id="gender" value="male" >male <input type="radio" name="gender[]" id="gender" value="female">female</p>
 
     <!--MAIL-->
     <p><label for="email">email</label><input type="email" name="email" id="email"></p>

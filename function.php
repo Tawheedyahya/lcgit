@@ -15,6 +15,9 @@ $errors=[];
         if(empty($array['lang'])){
             $errors['lang']="lang should not be empty";
         }
+        if(empty($array['gender'])){
+            $errors['gender']="gender should not be empty";
+        }
 
 
 

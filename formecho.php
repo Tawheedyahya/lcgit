@@ -4,7 +4,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     
     $validation=validate($_POST);
     $name = $_POST['name'];
-    $gender = $_POST['gender'];
+    $gender = isset($_POST['gender']) ? implode(", ",$_POST['gender']):"none";
     $email = $_POST['email'];
     $lang = isset($_POST['lang']) ? implode(", ", $_POST['lang']) : "None";
     $hobbies = isset($_POST['hobbies']) ? implode(", ", $_POST['hobbies']) : "None";
